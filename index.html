@@ -114,7 +114,7 @@
 							</div>
 							<div class="col-md-6 text-right">
 								<button class="btn btn-primary" id="btnThem" data-toggle="modal"
-									data-target="#myModal">Thêm nhân viên</button>
+									data-target="#myModal" onclick="themNhanVien()">Thêm nhân viên</button>
 							</div>
 						</div>
 					</div>
@@ -124,7 +124,8 @@
 						<div class="row mb-3">
 							<div class="col">
 								<div class="input-group">
-									<input type="text" class="form-control" placeholder="Loại nhân viên" id="searchName">
+									<input type="text" class="form-control" placeholder="Loại nhân viên"
+										id="searchName">
 									<div class="input-group-prepend">
 										<span class="input-group-text" id="btnTimNV"><i class="fa fa-search"></i></span>
 									</div>
@@ -142,7 +143,7 @@
 									<th>Họ và tên</th>
 									<th>Email</th>
 									<th>Ngày làm</th>
-									<th>Chức vụ</th>									
+									<th>Chức vụ</th>
 									<th>Tổng lương</th>
 									<th>Xếp loại</th>
 									<th><em class="fa fa-cog"></em></th>
@@ -187,7 +188,7 @@
 				<!-- Modal body -->
 				<div class="modal-body">
 
-					<form role="form">
+					<form role="form" id="formQLNV">
 
 						<div class="form-group">
 							<div class="input-group">
@@ -246,7 +247,7 @@
 
 							<span class="sp-thongbao" id="tbNgay"></span>
 						</div>
-						
+
 						<div class="form-group">
 							<div class="input-group">
 								<div class="input-group-prepend">
@@ -275,7 +276,8 @@
 						<div class="form-group">
 							<div class="input-group">
 								<div class="input-group-prepend">
-									<span class="input-group-text"><i class="fa fa-clock-o" aria-hidden="true"></i></span>
+									<span class="input-group-text"><i class="fa fa-clock-o"
+											aria-hidden="true"></i></span>
 								</div>
 								<input type="text" name="gioLam" id="gioLam" class="form-control input-sm"
 									placeholder="Giờ làm">
@@ -307,7 +309,10 @@
 	<!-- <script src="js/jquery-ui.min.js"></script> -->
 	<script src="./js/jquery-ui.js"></script>
 	<script src="js/datepicker.js"></script>
-
+	<script src="./js/DanhSachNhanVien.js"></script>
+	<script src="./js/NhanVien.js"></script>
+	<SCript src="./js/main.js"></SCript>
+	
 	<!-- Wow -->
 	<!-- <script src="js/wow.min.js"></script>	
 	<script>
